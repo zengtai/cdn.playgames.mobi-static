@@ -36,7 +36,13 @@
 .banner {
   background-color: #ffffff;
   background-size: 6px 6px;
-  background-image: repeating-linear-gradient(45deg, #cdcdcd50 0, #cdcdcd50 0.6px, #ffffff10 0, #ffffff10 50%);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #cdcdcd50 0,
+    #cdcdcd50 0.6px,
+    #ffffff10 0,
+    #ffffff10 50%
+  );
   text-align: center;
 }
 
@@ -71,14 +77,47 @@
 
 /* home */
 
-.section-title {
-  @apply mx-4 mt-4 mb-2 flex font-bold text-cyan-600
+.home .section-title {
+  @apply mx-4 mt-4 mb-2 flex font-bold text-cyan-600;
 }
 
 /* category */
 
-.category-list .page-title {
+.categories .page-title {
   @apply m-4 flex justify-center text-xl font-bold text-cyan-600;
+}
+
+.category-list {
+  @apply m-4 grid gap-2;
+}
+
+.item-link {
+  @apply flex justify-between rounded-lg border bg-white p-3;
+}
+
+.item-link .name,
+.item-link .count {
+  @apply flex items-center space-x-2;
+}
+
+.item-link svg {
+  @apply h-5 w-5;
+}
+
+.item-link .count {
+  @apply text-xs;
+}
+
+.count ul {
+  @apply flex -space-x-1 mr-1;
+}
+
+.count .icon {
+  @apply rounded-full border-2 border-white;
+}
+
+.count .number {
+  @apply w-6 h-6 text-center leading-6 bg-slate-200 text-slate-800 rounded-full;
 }
 
 .category .page-title {
@@ -92,4 +131,52 @@
 
 .first-screen .content {
   @apply relative z-10 mt-6 flex flex-col items-center;
+}
+
+.first-screen .game-title {
+  @apply my-2 font-bold text-white drop-shadow;
+}
+
+.first-screen .bg {
+  @apply absolute inset-0 z-0 h-full w-full object-cover opacity-50 blur-2xl;
+}
+
+.play-btn {
+  @apply block rounded-lg bg-sky-500 px-6 py-4 font-bold text-white shadow-md shadow-black/10;
+}
+
+.breadcrumb {
+  @apply m-4 space-x-2 text-sm;
+}
+
+.breadcrumb span {
+  @apply text-gray-300;
+}
+
+.breadcrumb .current {
+  @apply text-gray-400;
+}
+
+.description {
+  @apply m-4 text-sm;
+}
+
+.description .title {
+  @apply my-2 font-bold text-gray-600;
+}
+
+.game-detail .section-title {
+  @apply mx-4 my-2 p-2 text-center font-bold text-cyan-600;
+}
+
+.recent .content {
+  @apply m-4 flex flex-col items-center;
+}
+
+.recent .content p {
+  @apply p-4 border rounded-lg text-slate-500 text-sm;
+}
+
+.recent .back-home {
+  @apply inline-block mx-4 mt-8 py-4 px-6 bg-cyan-500 text-white rounded-full shadow-lg;
 }
