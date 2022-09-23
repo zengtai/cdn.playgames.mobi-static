@@ -25,117 +25,115 @@
 </head>
 
 <body>
-  <div class="flex min-h-screen flex-col gap-4 bg-slate-50">
-    <nav class="site-header fixed bottom-0 z-50 w-full bg-lime-400">
-      <div class="container mx-auto pt-2 pb-8 text-xs">
-        <ul class="mx-4 grid grid-cols-4 gap-x-4 text-center md:mx-0">
-          <li><a class="flex flex-col items-center" href="./index.html"><span class="h-6 overflow-hidden"><span
-                  class="icon relative"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <div id="app">
+    <div class="wrapper category">
+      <nav class="site-navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li><a href="./index.html"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                     </path>
-                  </svg></span></span><span>Home</span></a></li>
-          <li><a class="flex flex-col items-center" href="./category-list.html"><span class="h-6 overflow-hidden"><span
-                  class="icon relative"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  </svg></span><span>Home</span></a></li>
+            <li><a href="./category-list.html"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
                     </path>
-                  </svg></span></span><span>Category</span></a></li>
-          <li><a class="flex flex-col items-center" href="./recent.html"><span class="h-6 overflow-hidden"><span
-                  class="icon relative"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  </svg></span><span>Category</span></a></li>
+            <li><a href="./recent.html"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg></span></span><span>Recent</span></a></li>
-          <li><a class="flex flex-col items-center" href="./about.html"><span class="h-6 overflow-hidden"><span
-                  class="icon relative"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  </svg></span><span>Recent</span></a></li>
+            <li><a href="./about.html"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg></span></span><span>About</span></a></li>
-        </ul>
-      </div>
-    </nav>
-    <main class="grow">
-      <div class="container mx-auto">
-        <h1
-          class="m-4 flex items-center justify-center space-x-2 rounded-sm border bg-white p-3 font-bold text-cyan-600">
-          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
-            viewBox="0 0 20 20">
-            <path fill="#FF58BC" fill-rule="evenodd"
-              d="M10 1a9 9 0 00-9 9v4h3.255a7.031 7.031 0 002.569 2.24A3 3 0 005 19h10a3 3 0 00-1.824-2.76 7.031 7.031 0 002.57-2.24H19v-4a9 9 0 00-9-9zm6 9a6 6 0 11-12 0 6 6 0 0112 0zm-9 1a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0z"
-              clip-rule="evenodd"></path>
-            <ellipse cx="7.464" cy="4.732" fill="#FF58BC" rx="4" ry="2" transform="rotate(-30 7.464 4.732)"></ellipse>
-            <ellipse cx="13.598" cy="5.232" fill="#FF58BC" rx="3" ry="2" transform="rotate(30 13.598 5.232)"></ellipse>
-          </svg><span>Girl Games</span>
-        </h1>
-        <ul class="mx-4 grid grid-cols-3 gap-x-2 gap-y-4 xl:grid-cols-9 xl:gap-4">
-          <li>
-            <div><a href="./game.html"><img alt="Dress Queen"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/DressQueen.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
-
-              </a></div>
-          </li>
-          <li>
-            <div><a href="./game.html"><img alt="My Baby Care"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/MyBabyCare.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
-
-              </a></div>
-          </li>
-          <li>
-            <div><a href="./game.html"><img alt="My Unicorn"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/MyUnicorn.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
-
-              </a></div>
-          </li>
-        </ul>
-        <div class="my-4">
-          <div class="banner">
-            <div class="text-center text-xs uppercase text-cyan-600"><span
-                class="inline-block scale-90">Advertisement</span></div>
-            <!-- category-position-1 -->
-            <ins class="adsbygoogle grid place-content-center bg-black/5" data-ad-client="ca-pub-9062459637265650"
-              data-adtest="on" data-ad-slot="3151491220" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </div>
+                  </svg></span><span>About</span></a></li>
+          </ul>
         </div>
-        <ul class="mx-4 grid grid-cols-3 gap-x-2 gap-y-4 xl:grid-cols-9 xl:gap-4">
-          <li>
-            <div><a href="./game.html"><img alt="Dress Queen"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/DressQueen.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
+      </nav>
+      <main class="main">
+        <div class="container">
+          <h1 class="page-title">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+              viewBox="0 0 20 20">
+              <path fill="#FF58BC" fill-rule="evenodd"
+                d="M10 1a9 9 0 00-9 9v4h3.255a7.031 7.031 0 002.569 2.24A3 3 0 005 19h10a3 3 0 00-1.824-2.76 7.031 7.031 0 002.57-2.24H19v-4a9 9 0 00-9-9zm6 9a6 6 0 11-12 0 6 6 0 0112 0zm-9 1a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0z"
+                clip-rule="evenodd"></path>
+              <ellipse cx="7.464" cy="4.732" fill="#FF58BC" rx="4" ry="2" transform="rotate(-30 7.464 4.732)"></ellipse>
+              <ellipse cx="13.598" cy="5.232" fill="#FF58BC" rx="3" ry="2" transform="rotate(30 13.598 5.232)">
+              </ellipse>
+            </svg><span>Girl Games</span>
+          </h1>
+          <ul class="game-list">
+            <li>
+              <div><a href="./game.html"><img alt="Dress Queen"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/DressQueen.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
 
-              </a></div>
-          </li>
-          <li>
-            <div><a href="./game.html"><img alt="My Baby Care"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/MyBabyCare.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
+                </a></div>
+            </li>
+            <li>
+              <div><a href="./game.html"><img alt="My Baby Care"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/MyBabyCare.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
 
-              </a></div>
-          </li>
-          <li>
-            <div><a href="./game.html"><img alt="My Unicorn"
-                  src="https://cdn.iwantalipstick.com/gameicon2/webp/MyUnicorn.webp" width="200" height="200"
-                  decoding="async" class="rounded-xl bg-gray-100 shadow-lg" loading="lazy" style="color: transparent;">
+                </a></div>
+            </li>
+            <li>
+              <div><a href="./game.html"><img alt="My Unicorn"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/MyUnicorn.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
 
-              </a></div>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <footer class="site-footer mb-20 text-xs leading-5 text-slate-400">
-      <div class="container mx-auto border-t">
-        <p class="p-4 text-center">Copyright © 2022 PlayGames.mobi <br>All Rights Reserved</p>
-      </div>
-    </footer>
+                </a></div>
+            </li>
+          </ul>
+          <div class="my-4">
+            <div class="banner">
+              <div class="title"><span class="inline-block scale-90">Advertisement</span></div>
+              <!-- category-position-1 -->
+              <ins class="adsbygoogle grid place-content-center bg-black/5" data-ad-client="ca-pub-9062459637265650"
+                data-adtest="on" data-ad-slot="3151491220" data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+          <ul class="game-list">
+            <li>
+              <div><a href="./game.html"><img alt="Dress Queen"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/DressQueen.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
+
+                </a></div>
+            </li>
+            <li>
+              <div><a href="./game.html"><img alt="My Baby Care"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/MyBabyCare.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
+
+                </a></div>
+            </li>
+            <li>
+              <div><a href="./game.html"><img alt="My Unicorn"
+                    src="https://cdn.iwantalipstick.com/gameicon2/webp/MyUnicorn.webp" width="200" height="200"
+                    decoding="async" class="game-icon" loading="lazy">
+
+                </a></div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="container">
+          <p>Copyright © 2022 PlayGames.mobi <br>All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 

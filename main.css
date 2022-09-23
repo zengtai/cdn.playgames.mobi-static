@@ -2,9 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
+/* layout */
+.wrapper {
+  @apply flex min-h-screen flex-col gap-4 bg-slate-50;
+}
+
+.main {
+  @apply grow;
+}
+
+.main .container {
+  @apply mx-auto;
+}
+
+/* component */
+
+.navbar-list {
+  @apply mx-4 grid grid-cols-4 gap-x-4 text-center md:mx-0;
+}
+
+.navbar-list a {
+  @apply flex flex-col items-center;
+}
+
+.game-list {
+  @apply mx-4 grid grid-cols-3 gap-x-2 gap-y-4 xl:grid-cols-9 xl:gap-4;
+}
+
+.game-list .game-icon {
+  @apply rounded-xl bg-gray-100 shadow-lg;
+}
+
 .banner {
   background-color: #ffffff;
   background-size: 6px 6px;
   background-image: repeating-linear-gradient(45deg, #cdcdcd50 0, #cdcdcd50 0.6px, #ffffff10 0, #ffffff10 50%);
   text-align: center;
+}
+
+.banner .title {
+  @apply text-center text-xs uppercase text-cyan-600;
+}
+
+/* header */
+.site-navbar {
+  @apply fixed bottom-0 z-50 w-full bg-lime-400;
+}
+
+.site-navbar .container {
+  @apply mx-auto pt-2 pb-8 text-xs;
+}
+
+.site-navbar .icon {
+  @apply h-6 overflow-hidden relative;
+}
+
+.site-footer {
+  @apply mb-20 text-xs leading-5 text-slate-400;
+}
+
+.site-footer .container {
+  @apply mx-auto border-t;
+}
+
+.site-footer p {
+  @apply p-4 text-center;
+}
+
+/* home */
+
+.section-title {
+  @apply mx-4 mt-4 mb-2 flex font-bold text-cyan-600
+}
+
+/* category */
+
+.category-list .page-title {
+  @apply m-4 flex justify-center text-xl font-bold text-cyan-600;
+}
+
+.category .page-title {
+  @apply m-4 flex items-center justify-center space-x-2 rounded-sm border bg-white p-3 font-bold text-cyan-600;
+}
+
+/* game */
+.first-screen {
+  @apply relative overflow-hidden bg-cyan-800/40 xl:mx-auto xl:max-w-3xl;
+}
+
+.first-screen .content {
+  @apply relative z-10 mt-6 flex flex-col items-center;
 }
