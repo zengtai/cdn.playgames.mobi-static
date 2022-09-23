@@ -60,7 +60,7 @@
 }
 
 .site-navbar .icon {
-  @apply h-6 overflow-hidden relative;
+  @apply relative h-6 overflow-hidden;
 }
 
 .site-footer {
@@ -109,7 +109,7 @@
 }
 
 .count ul {
-  @apply flex -space-x-1 mr-1;
+  @apply mr-1 flex -space-x-1;
 }
 
 .count .icon {
@@ -117,7 +117,7 @@
 }
 
 .count .number {
-  @apply w-6 h-6 text-center leading-6 bg-slate-200 text-slate-800 rounded-full;
+  @apply h-6 w-6 rounded-full bg-slate-200 text-center leading-6 text-slate-800;
 }
 
 .category .page-title {
@@ -174,9 +174,9 @@
 }
 
 .recent .content p {
-  @apply p-4 border rounded-lg text-slate-500 text-sm;
+  @apply rounded-lg border p-4 text-sm text-slate-500;
 }
 
 .recent .back-home {
-  @apply inline-block mx-4 mt-8 py-4 px-6 bg-cyan-500 text-white rounded-full shadow-lg;
+  @apply mx-4 mt-8 inline-block rounded-full bg-cyan-500 py-4 px-6 text-white shadow-lg;
 }
