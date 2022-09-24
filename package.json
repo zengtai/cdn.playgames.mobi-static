@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i main.css -o css/global.css --watch --minify"
+    "dev": "npx tailwindcss -i main.css -o css/global.css -w -m"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "cssnano-preset-advanced": "^5.3.8",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
