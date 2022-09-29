@@ -3,7 +3,24 @@
 
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFVK2YP1HZ"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-JFVK2YP1HZ'); </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JFVK2YP1HZ', { 'viewport_size': firstScreenResolution() });
+    function firstScreenResolution() {
+      var browserWidth = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+      var browserHeight = Math.max(
+        document.documentElement.clientHeight,
+        window.innerHeight || 0
+      );
+
+      return browserWidth + "x" + browserHeight;
+    }
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

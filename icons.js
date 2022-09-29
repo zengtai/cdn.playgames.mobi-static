@@ -241,7 +241,7 @@ export const IconFire = ({ className }) => {
 export const ActionIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : "h-5 w-5"}
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -261,7 +261,7 @@ export const ActionIcon = (className) => {
 export const ArcadeIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -288,7 +288,7 @@ export const ArcadeIcon = (className) => {
 export const AdventureIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -315,7 +315,7 @@ export const AdventureIcon = (className) => {
 export const CasualIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="21"
       height="20"
       viewBox="0 0 21 20"
@@ -335,7 +335,7 @@ export const CasualIcon = (className) => {
 export const DefenseIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="20"
       height="18"
       viewBox="0 0 20 18"
@@ -375,7 +375,7 @@ export const PuzzleIcon = (className) => {
 export const ShootingIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="17"
       height="20"
       viewBox="0 0 17 20"
@@ -395,7 +395,7 @@ export const ShootingIcon = (className) => {
 export const SimulationIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="22"
       height="19"
       viewBox="0 0 22 19"
@@ -415,7 +415,7 @@ export const SimulationIcon = (className) => {
 export const SportsIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -435,7 +435,7 @@ export const SportsIcon = (className) => {
 export const StrategyIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       width="19"
       height="20"
       viewBox="0 0 19 20"
@@ -455,7 +455,7 @@ export const StrategyIcon = (className) => {
 export const RacingIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -473,7 +473,7 @@ export const RacingIcon = (className) => {
 export const IoIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -502,7 +502,7 @@ export const IoIcon = (className) => {
 export const GirlIcon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -538,7 +538,7 @@ export const GirlIcon = (className) => {
 export const Match3Icon = (className) => {
   return `
     <svg
-      className={className ? "h-5 w-5 ${className}" : "h-5 w-5"}
+      className=${className ? "h-5 w-5 " + className : '"h-5 w-5"'}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"

@@ -3,7 +3,7 @@
 //   featuredGames as featuredGamesData,
 //   getGames,
 // } from "./data.js";
-
+import { gameData } from "./data.js";
 import { topGames as topGamesData } from "./data/top-games.js";
 import { categories as categoryData } from "./data/categories.js";
 import { getIcon } from "./icons.js";
@@ -143,10 +143,7 @@ if (pathname.endsWith(`/index.html`) || pathname.endsWith(`/`)) {
 }
 
 /* 分类首页 */
-
 if (pathname.endsWith(`/category-list.html`)) {
-  import { gameData } from "./data.js";
-
   const categories = categoryData.sort((a, b) => a.slug > b.slug);
 
   let content = `
@@ -154,8 +151,8 @@ if (pathname.endsWith(`/category-list.html`)) {
   <ul class="category-list">
     ${categories
       .map((item, index) => {
-        let games =
-          gameData.filter((game) => game.category.name == item.category) || [];
+        let games = gameData.filter((game) => game.category.name === item.name);
+        let length = games.length;
 
         return `
           <li>
@@ -165,7 +162,7 @@ if (pathname.endsWith(`/category-list.html`)) {
                 <span>${item.name}</span>
               </div>
               <div class="count">
-               ${games.length ? "<ul></ul>" : ""}
+               ${length ? "<ul></ul>" : length}
               </div>
             </a>
           </li>`;
