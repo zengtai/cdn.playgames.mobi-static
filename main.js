@@ -118,10 +118,14 @@ function Layout(children, page) {
 
 /* 首页内容。可以单独生成首页数据以减少加载体积。 */
 if (pathname.endsWith(`/index.html`) || pathname.endsWith(`/`)) {
-  const topGames = topGamesData;
+  // const topGames = [...topGamesData.sort(() => Math.random() * 0.5 - 1)];
+  const topGames = topGamesData.sort(() => Math.random() - 0.5);
   const featuredGames = topGames.filter((i) => FEATURED_GAMES.includes(i.gid));
 
-  console.log(`topGames: `, JSON.stringify(topGames));
+  console.log(
+    `topGames: `,
+    JSON.stringify(topGames.map((i) => i.gid).join(`,`))
+  );
   console.log(`featuredGames: `, JSON.stringify(featuredGames));
 
   let content = `${Banner({
